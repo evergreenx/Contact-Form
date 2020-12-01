@@ -8,54 +8,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Contact form</h1>
+    <!-- Widget should be a responsive form, minWidth = 200px, maxWidth = 600px -->
 
-  
-    <div class="">
-      <form id="" >
-        <h3>Quick Contact</h3>
-        <h4>Contact us today, and get reply with in 24 hours!</h4>
+    <form id="myForm">
+      <h1>Contact form</h1>
 
-
-        
-    <select id="contact" required>
-        <option selected="selected" disabled>
-         Contact
-            </option>
+      <label for="select">Contact Persons</label>
+      <select id="contact" required>
+        <option selected="selected" disabled>Contact</option>
         <div class="results"></div>
+      </select>
 
-        </select>
+      <label for="select">Date</label>
+
+      <input type="date" required autofocus id="date-picker" />
+
+
+      <label for="coment">Add Comment</label>
+
+      <textarea
+        placeholder="Type your Message Here...."
+        tabindex="5"
+        required
+        id="textarea"
+      ></textarea>
+
+      <button
+        name="submit"
+        type="submit"
+        id="contact-submit"
+        data-submit="...Sending"
+      >
+        Submit
+      </button>
+    </form>
+
+
+    <section class="result">
       
-          <input
-           
-            type="date"
-           
-            required
-            autofocus
-            id="date-picker"
+    </section>
 
-          />
-     
-
-    
-          <textarea
-            placeholder="Type your Message Here...."
-            tabindex="5"
-            required
-            id="textarea"
-          ></textarea>
-       
-          <button
-            name="submit"
-           
-            id="contact-submit"
-            data-submit="...Sending"
-          >
-            Submit
-          </button>
-     
-      </form>
-    </div>
     <script src="/app.js"></script>
   </body>
 </html>

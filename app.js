@@ -8,10 +8,20 @@ let datePicker = document.getElementById("date-picker");
 let submitBtn = document.getElementById("contact-submit");
 
 let select = document.getElementById("contact");
+let myForm = document.getElementById("myForm");
+let modal = document.querySelector(".result");
 
-submitBtn.addEventListener("click", (e) => {
+console.log(myForm);
+
+// myForm.addEventListener("submit", validateForm);
+
+myForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  alert(datePicker.value + textArea.value + select.value);
+  // alert(datePicker.value + textArea.value + select.value);
+
+  modal.innerHTML = datePicker.value + textArea.value + select.value;
+
+  myForm.reset();
 });
 
 fetch(url)
