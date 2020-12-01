@@ -4,16 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Contact form</h1>
 
+  
+    <div class="">
+      <form id="" >
+        <h3>Quick Contact</h3>
+        <h4>Contact us today, and get reply with in 24 hours!</h4>
 
 
-    <select id="contact">
+        
+    <select id="contact" required>
+        <option selected="selected" disabled>
+         Contact
+            </option>
+        <div class="results"></div>
 
-        <option>Hello</option>
-    </select>
+        </select>
+      
+          <input
+           
+            type="date"
+           
+            required
+            autofocus
+            id="date-picker"
+
+          />
+     
+
+    
+          <textarea
+            placeholder="Type your Message Here...."
+            tabindex="5"
+            required
+            id="textarea"
+          ></textarea>
+       
+          <button
+            name="submit"
+           
+            id="contact-submit"
+            data-submit="...Sending"
+          >
+            Submit
+          </button>
+     
+      </form>
+    </div>
     <script src="/app.js"></script>
   </body>
 </html>
