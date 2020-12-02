@@ -1,53 +1,48 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
 
 form {
   min-width: 200px;
   max-width: 600px;
-  margin:10px auto;
+  margin: 10px auto;
   display: flex;
   padding: 40px;
   flex-direction: column;
 
   font-size: larger;
   background: DarkBlue;
-  color:Turquoise;
-  border-radius: 10px;;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+  color: Turquoise;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
 input,
 button,
 select,
-textarea  {
+textarea {
   margin-top: 5px;
   margin-bottom: 10px;
-padding: 20px;
-
+  padding: 20px;
 }
 
-label{
+label {
   margin-top: 10px;
-
 }
 textarea {
   height: 200px;
 }
 
-button{
-  color:#fff;
+button {
+  color: #fff;
   background-color: Turquoise;
   outline: none;
-  border:none;
+  border: none;
   border-radius: 5px;
   font-size: larger;
-  
 }
-
-
 
 /* Modal */
 
@@ -60,8 +55,6 @@ button{
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
   display: none;
-
-
 }
 .overlay:target {
   visibility: visible;
@@ -81,9 +74,8 @@ button{
 .popup h1 {
   margin-top: 0;
   color: #333;
-  font-size:1.4rem;
-  color: Turquoise;;
- 
+  font-size: 1.4rem;
+  color: Turquoise;
 }
 .popup .close {
   position: absolute;
@@ -99,14 +91,10 @@ button{
 .popup .content {
   max-height: 30%;
   overflow: auto;
-
-  
 }
 
-.popup .content p{
-
-  padding-top: 20px;;
+.popup .content p {
+  padding-top: 20px;
   font-size: medium;
   font-weight: 400;
-
 }

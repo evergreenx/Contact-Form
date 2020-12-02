@@ -1,11 +1,10 @@
 "use stirct ";
-let url = "https://reqres.in/api/users?page=1";
+// created by ido Dickson evergreen.
 
+let url = "https://reqres.in/api/users?page=1";
 let textArea = document.getElementById("textarea");
 let datePicker = document.getElementById("date-picker");
-
-let submitBtn = document.getElementById("contact-submit");
-
+let submitBtn = document.getElementById("contact-submit")
 let select = document.getElementById("contact");
 let myForm = document.getElementById("myForm");
 let modal = document.querySelector(".overlay");
@@ -56,7 +55,7 @@ const populateSelect = () => {
       let contact = data.data; // Get the results
 
       for (x in contact) {
-        var sel = document.createElement("option");
+        let sel = document.createElement("option");
         sel.innerHTML = contact[x].first_name + " " + contact[x].last_name;
         sel.value = contact[x].first_name + " " + contact[x].last_name;
         document.getElementById("contact").appendChild(sel);
