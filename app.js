@@ -9,7 +9,8 @@ let submitBtn = document.getElementById("contact-submit");
 
 let select = document.getElementById("contact");
 let myForm = document.getElementById("myForm");
-let modal = document.querySelector(".result");
+let modal = document.querySelector(".overlay");
+let content = document.querySelector(".content");
 
 console.log(myForm);
 
@@ -19,8 +20,8 @@ myForm.addEventListener("submit", (e) => {
   e.preventDefault();
   // alert(datePicker.value + textArea.value + select.value);
 
-  modal.style.display = 'block'
-  modal.innerHTML = datePicker.value + textArea.value + select.value;
+  modal.style.display = "block";
+  content.innerText = datePicker.value + textArea.value + select.value;
 
   myForm.reset();
 });

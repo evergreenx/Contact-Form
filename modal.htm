@@ -1,51 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-form {
-  min-width: 200px;
-  max-width: 600px;
-  margin: 20px auto;
-  display: flex;
-  padding: 40px;
-  flex-direction: column;
-
-  font-size: larger;
-  background: #000;
-  color:#fff;
-  border-radius: 10px;;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-
-input,
-button,
-select,
-textarea  {
-  margin-top: 5px;
-  margin-bottom: 10px;
-padding: 20px;
-
-}
-
-label{
-  margin-top: 10px;
-
-}
-textarea {
-  height: 200px;
-}
-
-button{
-  color:#fff;
-  background-color: blue;
-  outline: none;
-  border:none;
-  
-}
-
-
-
-/* Modal */
+    <style>
 
 .overlay {
   position: fixed;
@@ -55,12 +15,10 @@ button{
   right: 0;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
-  display: none;
-
-  /* opacity: 0; */
+  opacity: 0;
 }
 .overlay:target {
-  visibility: visible;
+  /* visibility: visible; */
   opacity: 1;
 }
 
@@ -96,3 +54,25 @@ button{
   max-height: 30%;
   overflow: auto;
 }
+    </style>
+</head>
+
+
+<body>
+    
+
+    
+    <section class="result overlay">
+
+        <div id="popup1" >
+          <div class="popup">
+            <h2>Here i am</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+              Thank to pop me out of that button, but now i'm done so you can close this window.
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
