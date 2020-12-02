@@ -19,6 +19,7 @@ myForm.addEventListener("submit", (e) => {
   e.preventDefault();
   // alert(datePicker.value + textArea.value + select.value);
 
+  modal.style.display = 'block'
   modal.innerHTML = datePicker.value + textArea.value + select.value;
 
   myForm.reset();
