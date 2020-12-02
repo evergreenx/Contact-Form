@@ -5,31 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Widget should be a responsive form, minWidth = 200px, maxWidth = 600px -->
 
-
     <section class="overlay">
-
-      <div id="popup1" >
+      <div id="popup1">
         <div class="popup">
-          <h2>Here i am</h2>
+          <h1>Form's Details</h1>
           <a class="close" href="#">&times;</a>
-          <div class="content">
-            Thank to pop me out of that button, but now i'm done so you can close this window.
-          </div>
+
+          <div class="content"></div>
         </div>
       </div>
     </section>
     <form id="myForm">
       <h1>Contact form</h1>
 
-     
-      <label for="contact">Contact Persons</label>
-      <select id="contact" >
-        <option selected="selected" disabled value=""></option>Contact</option>
+      <label for="contact">Contact Person</label>
+      <select id="contact" required>
+        <option selected="selected" disabled value="">Choose Contact</option>
         <div class="results"></div>
       </select>
 
@@ -37,28 +38,23 @@
 
       <input type="date" required autofocus id="date-picker" />
 
-
       <label for="textarea">Add Comment</label>
 
       <textarea
-        placeholder="Type your Message Here...."
+        placeholder="Type your Comment Here...."
         tabindex="5"
-        required
         id="textarea"
-        
       ></textarea>
 
       <button
         name="submit"
-     
+        type="submit"
         id="contact-submit"
         data-submit="...Sending"
       >
         Submit
       </button>
     </form>
-
-
 
     <script src="/app.js"></script>
   </body>
