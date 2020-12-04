@@ -1,17 +1,13 @@
 # Contact-Form
 A simple form widget that can be used on different web sites
-<div align="center">
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/46585d4c-48b4-42fd-aa3a-2174a870f1a0/deploy-status)](https://app.netlify.com/sites/contactform-2aad8b/deploys)
+## Screen-Shot
 
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+## Live Link 
+[![Link](https://contactform-2aad8b.netlify.app/)
 
-[![made in nigeria](https://img.shields.io/badge/made%20in-nigeria-008751.svg?style=for-the-badge)](https://github.com/acekyd/made-in-nigeria)
-
-
-
-</div>
-
-##Link
 
 ## Author
 [Ido Evergreen](https://github.com/evergreen2001)
