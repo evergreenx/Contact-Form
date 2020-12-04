@@ -6,7 +6,7 @@ A simple form widget that can be used on different web sites
 
 
 ## Live Link 
-[![Link](https://contactform-2aad8b.netlify.app/)
+[![Link]](https://contactform-2aad8b.netlify.app/)
 
 
 ## Author
